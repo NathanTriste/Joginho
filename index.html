@@ -1,41 +1,28 @@
-<!doctype html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#101724" />
-    <title>SWORD DUEL 2D</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main id="app">
-      <canvas
-        id="gameCanvas"
-        width="1280"
-        height="720"
-        aria-label="Arena de SWORD DUEL 2D"
-      ></canvas>
-      <section id="hud" class="hidden" aria-live="polite">
-        <div class="fighter-hud blue">
-          <b>BLUE KNIGHT</b>
-          <div class="meter hp"><i></i></div>
-          <div class="meter stamina"><i></i></div>
-          <div class="meter special"><i></i></div>
-        </div>
-        <div class="round-hud">
-          <b id="roundLabel">ROUND 1</b><strong id="timer">02:00</strong
-          ><span id="score">BLUE 0 — 0 RED</span>
-        </div>
-        <div class="fighter-hud red">
-          <b>RED KNIGHT</b>
-          <div class="meter hp"><i></i></div>
-          <div class="meter stamina"><i></i></div>
-          <div class="meter special"><i></i></div>
-        </div>
-      </section>
-      <div id="announcement" aria-live="assertive"></div>
-      <section id="overlay" class="overlay"></section>
-    </main>
-    <script src="script.js"></script>
-  </body>
-</html>
+diff --git a/index.html b/index.html
+index e69de29bb2d1d6434b8b29ae775ad8c2e48c5391..a4d4d86e3a99fcda102b992f8262d230375ae9e1 100644
+--- a/index.html
++++ b/index.html
+@@ -0,0 +1,23 @@
++<!doctype html>
++<html lang="pt-BR">
++<head>
++  <meta charset="utf-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1">
++  <meta name="theme-color" content="#101724">
++  <title>SWORD DUEL 2D</title>
++  <link rel="stylesheet" href="style.css">
++</head>
++<body>
++  <main id="app">
++    <canvas id="gameCanvas" width="1280" height="720" aria-label="Arena de SWORD DUEL 2D"></canvas>
++    <section id="hud" class="hidden" aria-live="polite">
++      <div class="fighter-hud blue"><b>BLUE KNIGHT</b><div class="meter hp"><i></i></div><div class="meter stamina"><i></i></div><div class="meter special"><i></i></div></div>
++      <div class="round-hud"><b id="roundLabel">ROUND 1</b><strong id="timer">02:00</strong><span id="score">BLUE 0 — 0 RED</span></div>
++      <div class="fighter-hud red"><b>RED KNIGHT</b><div class="meter hp"><i></i></div><div class="meter stamina"><i></i></div><div class="meter special"><i></i></div></div>
++    </section>
++    <div id="announcement" aria-live="assertive"></div>
++    <section id="overlay" class="overlay"></section>
++  </main>
++  <script src="script.js"></script>
++</body>
++</html>
